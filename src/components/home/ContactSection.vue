@@ -3,21 +3,20 @@
     id="contact"
     class="relative py-24 bg-gradient-to-br from-sky-900 via-sky-700 to-sky-900 overflow-hidden"
   >
-    <!-- Animated Background -->
+
     <div class="absolute inset-0">
       <div class="absolute inset-0 opacity-20">
-        <!-- BULATAN 1 -->
+    
         <div
           class="absolute top-20 right-20 w-96 h-96 bg-sky-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
         ></div>
 
-        <!-- BULATAN 2 -->
         <div
           class="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
           style="animation-delay: 2s"
         ></div>
 
-        <!-- BULATAN 3 -->
+    
         <div
           class="absolute top-1/2 left-1/2 w-96 h-96 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
           style="animation-delay: 4s"
@@ -25,7 +24,7 @@
       </div>
     </div>
 
-    <!-- Grid Pattern -->
+   
     <div class="absolute inset-0 opacity-10">
       <div
         class="absolute inset-0"
@@ -38,7 +37,7 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10">
-      <!-- Header -->
+    
       <div class="text-center mb-16 space-y-6 animate-slide-up">
         <div
           class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white animate-fade-in"
@@ -59,7 +58,7 @@
         </p>
       </div>
 
-      <!-- CTA Banner -->
+
       <div
         class="mt-16 p-8 bg-gradient-to-r from-sky-600/20 to-blue-600/20 
                backdrop-blur-md border border-white/10 rounded-3xl text-center animate-fade-in"

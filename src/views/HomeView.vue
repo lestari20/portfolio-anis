@@ -4,11 +4,11 @@
     <!-- Hero Section -->
     <HeroSection id="home" />
 
-    <!-- Skills -->
-    <SkillSection id="skills" />
-
     <!-- Projects -->
     <ProjectSection id="projects" />
+
+    <!-- Skills -->
+    <SkillSection id="skills" />
 
     <!-- Contact -->
     <ContactSection id="contact" />

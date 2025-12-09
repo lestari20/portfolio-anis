@@ -2,7 +2,7 @@
   <section
     class="relative py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden"
   >
-    <!-- Background Decoration -->
+
     <div class="absolute inset-0 opacity-30">
       <div
         class="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"
@@ -16,7 +16,7 @@
     </div>
 
     <div class="relative max-w-full mx-auto px-8">
-      <!-- Header -->
+
       <div class="text-center mb-16">
         <div class="inline-block mb-4">
           <span
@@ -39,7 +39,7 @@
       </div>
 
       <!-- Skills Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         <div
           v-for="(skill, index) in skills"
           :key="skill.name"
@@ -58,13 +58,11 @@
                 : 'hover:scale-[1.02]'
             "
           >
-            <!-- Gradient BG -->
             <div
               class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               :class="`bg-gradient-to-br ${skill.color}`"
             ></div>
 
-            <!-- Content -->
             <div class="relative z-10">
               <div
                 class="mb-4 p-3 rounded-xl inline-flex text-white transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
@@ -91,7 +89,6 @@
                 {{ skill.description }}
               </p>
 
-              <!-- Progress Bar -->
               <div class="mt-4 h-1.5 bg-gray-200 rounded-full overflow-hidden group-hover:bg-white/30">
                 <div
                   class="h-full rounded-full transition-all duration-1000 ease-out"
@@ -101,7 +98,6 @@
               </div>
             </div>
 
-            <!-- Shine Effect -->
             <div
               class="absolute inset-0 rounded-2xl overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity"
             >

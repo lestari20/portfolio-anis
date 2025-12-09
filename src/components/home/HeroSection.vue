@@ -3,7 +3,6 @@
     class="relative min-h-screen flex items-center overflow-hidden 
            bg-gradient-to-br from-sky-900 via-sky-700 to-sky-900"
   >
-    <!-- Background Grid -->
     <div class="absolute inset-0 opacity-20">
       <div
         class="absolute inset-0"
@@ -15,7 +14,6 @@
       />
     </div>
 
-    <!-- Floating Orbs -->
     <div class="absolute inset-0 overflow-hidden">
       <div
         class="absolute w-96 h-96 bg-sky-400/30 rounded-full blur-3xl animate-pulse"
@@ -47,21 +45,17 @@
       ></div>
     </div>
 
-    <!-- Main Content -->
     <div class="relative z-10 w-full max-w-full mx-auto px-8 lg:px-24 py-20">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- LEFT CONTENT -->
+
         <div class="space-y-8">
-          <!-- Greeting Badge -->
           <div
             class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md 
                    border border-white/20 rounded-full text-white animate-fade-in"
           >
-            <!-- <span class="text-yellow-300 animate-pulse text-sm">✨</span> -->
             <span class="text-sm font-medium">Welcome to my portfolio</span>
           </div>
 
-          <!-- Heading -->
           <div class="space-y-4">
             <h1 class="text-5xl lg:text-7xl font-bold leading-tight animate-slide-up">
               <span class="text-white">Hi, I'm</span><br />
@@ -73,14 +67,11 @@
               </span>
             </h1>
 
-            <!-- Rotating Role -->
             <div class="flex items-center gap-3 text-2xl lg:text-3xl font-semibold text-sky-200">
-              <!-- <span class="text-sky-400 text-3xl">💻</span> -->
               <span class="animate-fade-in" :key="rolesIndex">{{ roles[rolesIndex] }}</span>
             </div>
           </div>
 
-          <!-- Description -->
           <p
             class="text-lg lg:text-xl text-sky-100 max-w-xl leading-relaxed animate-slide-up"
             style="animation-delay: 0.2s"
@@ -91,7 +82,7 @@
             <span class="text-cyan-300 font-semibold">clean UX</span>.
           </p>
 
-          <!-- Tech Pills -->
+
           <div class="flex flex-wrap gap-3 animate-slide-up" style="animation-delay:0.3s">
             <span
               v-for="(tech, i) in techs"
@@ -105,7 +96,6 @@
             </span>
           </div>
 
-          <!-- Buttons -->
           <div class="flex flex-wrap gap-4 animate-slide-up" style="animation-delay:0.5s">
             <a
               href="#projects"

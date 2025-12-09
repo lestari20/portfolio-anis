@@ -1,44 +1,48 @@
 <template>
-  <footer class="bg-gray-900 text-gray-300 py-12">
+  <footer class="bg-slate-900 text-gray-300 pt-16 pb-10">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-      <!-- 1. Brand -->
       <div>
-        <h2 class="text-2xl font-bold text-white mb-3">MyBrand</h2>
+        <h2 class="text-3xl font-bold text-white mb-3">
+          Anis<span class="text-blue-500">Dev</span>
+        </h2>
         <p class="text-gray-400 leading-relaxed">
-          Website modern dibangun menggunakan Vue.js dan Tailwind CSS.
+          Portfolio website modern dibangun dengan Vue.js dan Tailwind CSS.
         </p>
       </div>
 
-      <!-- 2. Links -->
       <div>
-        <h3 class="text-xl font-semibold text-white mb-3">Quick Links</h3>
+        <h3 class="text-xl font-semibold text-white mb-3">Navigate</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:text-white">Home</a></li>
-          <li><a href="#" class="hover:text-white">About</a></li>
-          <li><a href="#" class="hover:text-white">Services</a></li>
-          <li><a href="#" class="hover:text-white">Contact</a></li>
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
         </ul>
       </div>
 
-      <!-- 3. Contact -->
       <div>
         <h3 class="text-xl font-semibold text-white mb-3">Contact</h3>
-        <ul class="space-y-2">
-          <li>Email: support@mybrand.com</li>
-          <li>Phone: +62 812 3456 7890</li>
-          <li>Location: Jakarta, Indonesia</li>
+        <ul class="space-y-2 text-gray-400">
+          <li>Email: anissslestariii@gmail.com</li>
+          <li>Phone: +62 852 6118 7956</li>
+          <li>Location: Indonesia</li>
         </ul>
       </div>
 
     </div>
 
-    <div class="text-center mt-10 text-gray-500 text-sm">
-      © {{ new Date().getFullYear() }} MyBrand. All rights reserved.
+    <div class="border-t border-gray-700 mt-14 pt-6 text-center text-gray-500 text-sm">
+      © {{ new Date().getFullYear() }} AnisDev. All rights reserved.
     </div>
   </footer>
 </template>
 
 <script setup>
 </script>
- 
+
+<style scoped>
+.footer-link {
+  @apply text-gray-300 hover:text-white transition;
+}
+</style>

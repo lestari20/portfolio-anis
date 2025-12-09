@@ -1,9 +1,9 @@
 <template>
   <section
     id="projects"
-    class="relative py-24 bg-gradient-to-br from-sky-900 via-sky-700 to-sky-900 overflow-hidden"
+    class="relative py-24 bg-gradient-to-bl from-sky-900 via-sky-700 to-sky-900 overflow-hidden"
   >
-    <!-- Animated Background -->
+
     <div class="absolute inset-0">
       <div class="absolute inset-0 opacity-20">
         <div
@@ -20,7 +20,6 @@
       </div>
     </div>
 
-    <!-- Grid Pattern -->
     <div class="absolute inset-0 opacity-10">
       <div
         class="absolute inset-0"
@@ -35,7 +34,7 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
-      <!-- Header -->
+
       <div
         class="text-center mb-16 space-y-6 transition-all duration-1000"
         :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
@@ -47,19 +46,8 @@
           <span class="text-sm font-semibold">Portfolio Projects</span>
         </div>
 
-        <!-- <h2
-          class="text-5xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-200 to-purple-200 tracking-tight"
-        >
-          Featured Projects
-        </h2>
-
-        <p class="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
-          Eksplorasi koleksi proyek inovatif yang dikembangkan dengan teknologi
-          terkini dan standar industri terbaik
-        </p> -->
       </div>
 
-      <!-- Search -->
       <div
         class="max-w-2xl mx-auto mb-12 transition-all duration-1000 delay-200"
         :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
@@ -84,7 +72,6 @@
         </div>
       </div>
 
-      <!-- Filter Buttons -->
       <div
         class="flex flex-wrap justify-center gap-3 mb-16 transition-all duration-1000 delay-300"
         :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
@@ -114,7 +101,6 @@
         </button>
       </div>
 
-      <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="(project, index) in filteredProjects"
@@ -122,7 +108,6 @@
           class="group relative bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20"
           :style="`animation: fadeInUp 0.6s ease-out ${index * 0.1}s both`"
         >
-          <!-- IMAGE -->
           <div class="relative h-64 overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
             <img
               :src="project.image"
@@ -133,7 +118,6 @@
 
             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
 
-            <!-- Category Badge -->
             <div
               class="absolute top-4 left-4 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg backdrop-blur-sm text-white flex items-center gap-1.5 transform transition-transform group-hover:scale-110"
               :class="`bg-gradient-to-r ${project.badgeColor}`"
@@ -142,7 +126,6 @@
               <span>{{ project.category }}</span>
             </div>
 
-            <!-- Hover View Button -->
             <div
               class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all bg-black/60 backdrop-blur-sm"
             >
@@ -156,7 +139,6 @@
               </a>
             </div>
 
-            <!-- Tech Pills -->
             <div
               class="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
             >
@@ -170,7 +152,6 @@
             </div>
           </div>
 
-          <!-- CONTENT -->
           <div class="p-6 space-y-4">
             <h3
               class="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-all line-clamp-1"
